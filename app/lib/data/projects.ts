@@ -57,6 +57,7 @@ export const projects: Project[] = [
     type: 'fullstack',
     mainLang: 'Rust',
     tags: ['rust', 'systems', 'networking', 'tls', 'devops', 'open-source'],
+    image: '/assets/raba.png',
     links: {
       github: 'https://github.com/codad5/raba',
       website: 'https://codad5.github.io/raba',
