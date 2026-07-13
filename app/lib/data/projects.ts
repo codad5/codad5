@@ -50,6 +50,29 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  // === TIER 0: Flagship Systems Project ===
+  {
+    id: 'raba',
+    name: 'raba — Self-Hosted Tunneling Platform',
+    type: 'fullstack',
+    mainLang: 'Rust',
+    tags: ['rust', 'systems', 'networking', 'tls', 'devops', 'open-source'],
+    links: {
+      github: 'https://github.com/codad5/raba',
+      website: 'https://codad5.github.io/raba',
+    },
+    description: 'Self-hosted, open-source ngrok/Cloudflare Tunnel alternative. Custom multiplexed binary protocol over TLS for HTTP/TCP/UDP tunneling, multi-tenant RBAC, automated Let\'s Encrypt via delegated DNS-01, and a full CI/CD release pipeline.',
+    featured: true,
+    relevance: {
+      rust: 10,
+      systems: 10,
+      backend: 9,
+      devops: 9,
+      opensource: 9,
+      typescript: 5,
+    },
+  },
+
   // === TIER 1: High-Impact Rust/Systems ===
   {
     id: 'fli',
