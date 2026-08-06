@@ -19,7 +19,7 @@ export default function TopBar() {
   return (
     <>
       <div
-        className="ed-topbar flex items-center justify-between px-6 lg:px-12 transition-all duration-400"
+        className="ed-topbar flex items-center justify-between px-6 lg:px-12 transition-all duration-500"
         style={{
           backgroundColor: 'color-mix(in srgb, var(--color-bg-primary) 85%, transparent)',
           backdropFilter: 'blur(10px)',
@@ -54,6 +54,15 @@ export default function TopBar() {
         }`}
         style={{ backgroundColor: 'var(--color-bg-inverse)' }}
       >
+        <button
+          onClick={close}
+          className="absolute top-6 right-6 lg:top-8 lg:right-12 text-sm transition-opacity duration-300 hover:opacity-50"
+          style={{ color: '#171a18', fontFamily: 'var(--font-body)', fontWeight: 700 }}
+          aria-label="Close menu"
+        >
+          Close ✕
+        </button>
+
         <nav className="flex flex-col gap-2">
           {navLinks.map((item, i) => (
             <a

@@ -23,12 +23,14 @@ export default function Hero() {
 
   return (
     <header
-      className="ed-stack w-full flex flex-col relative overflow-hidden"
+      className="w-full flex flex-col relative overflow-hidden"
       style={{ backgroundColor: 'var(--color-bg-primary)', zIndex: 10 }}
     >
-      {/* Header: full name + roles + menu trigger — this IS the page header while on Hero */}
+      {/* Header: full name + roles + menu trigger — this IS the page header while on Hero.
+          Deliberately not sticky/stacked: it must scroll away normally so it hands off
+          cleanly to the compact top bar instead of staying glued underneath it. */}
       <div
-        className="flex items-start justify-between px-6 lg:px-12 pt-6 pb-6 gap-6"
+        className="flex items-center justify-between px-6 lg:px-12 pt-6 pb-6 gap-6"
         style={{ borderBottom: '1px solid var(--color-border)' }}
       >
         <div className="flex flex-col leading-[0.95]">
@@ -46,7 +48,7 @@ export default function Hero() {
           </span>
         </div>
 
-        <div className="hidden md:flex items-start gap-16">
+        <div className="hidden md:flex items-center gap-16">
           {roles.map((role, i) => (
             <Reveal key={role.index} delay={i * 120} variant="up" className="flex gap-3">
               <span
