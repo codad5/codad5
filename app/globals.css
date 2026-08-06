@@ -84,6 +84,30 @@
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 }
 
+/* Editorial Theme (Agency/Studio style) */
+[data-theme="editorial"] {
+  /* Sage backdrop, cream ink */
+  --color-bg-primary: #6b7a74;
+  --color-bg-secondary: #5f6e68;
+  --color-bg-tertiary: #56655f;
+  --color-bg-inverse: #f2ede1;
+
+  --color-text-primary: #171a18;
+  --color-text-secondary: #e9e4d8;
+  --color-text-muted: #c7cec9;
+
+  --color-accent: #f2ede1;
+  --color-accent-hover: #ffffff;
+  --color-accent-secondary: #d9d2c1;
+
+  --color-border: rgba(242, 237, 225, 0.22);
+  --color-border-light: rgba(242, 237, 225, 0.12);
+
+  --font-heading: var(--font-archivo), 'Helvetica Neue', sans-serif;
+  --font-body: var(--font-archivo), 'Helvetica Neue', sans-serif;
+  --font-mono: var(--font-archivo), 'Helvetica Neue', sans-serif;
+}
+
 /* ============================================
    Base Styles
    ============================================ */
@@ -138,6 +162,11 @@ code {
   color: white;
 }
 
+[data-theme="editorial"] ::selection {
+  background-color: #ffffff;
+  color: #14161a;
+}
+
 /* ============================================
    Utility Classes
    ============================================ */
@@ -175,4 +204,133 @@ code {
   color: var(--color-accent);
   padding-right: var(--space-sm);
   padding-top: var(--space-xs);
+}
+
+/* ============================================
+   Editorial Theme - Scroll Motion
+   ============================================ */
+
+@media (prefers-reduced-motion: no-preference) {
+  .ed-reveal {
+    opacity: 0;
+    transform: translateY(2.25rem);
+    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--ed-delay, 0ms);
+    will-change: transform, opacity;
+  }
+
+  .ed-reveal.ed-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .ed-reveal-scale {
+    opacity: 0;
+    transform: scale(0.94);
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--ed-delay, 0ms);
+  }
+
+  .ed-reveal-scale.ed-in {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .ed-line {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ed-line > * {
+    display: block;
+    transform: translateY(110%);
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--ed-delay, 0ms);
+  }
+
+  .ed-line.ed-in > * {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ed-reveal,
+  .ed-reveal-scale,
+  .ed-line > * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+.ed-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.ed-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.1em;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ed-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.ed-index {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+@keyframes ed-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.ed-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: ed-marquee 26s linear infinite;
+}
+
+/* Per-letter pop animation (hero name) */
+.ed-letter {
+  display: inline-block;
+  cursor: default;
+}
+
+@keyframes ed-letter-pop {
+  0% {
+    transform: scale(1);
+    color: var(--color-bg-inverse);
+  }
+  45% {
+    transform: scale(1.22);
+    color: var(--pop-color, #e8734a);
+  }
+  100% {
+    transform: scale(1);
+    color: var(--color-bg-inverse);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ed-letters.ed-play .ed-letter {
+    animation: ed-letter-pop 650ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    animation-delay: var(--pop-delay, 0ms);
+  }
+
+  .ed-letter:hover {
+    animation: ed-letter-pop 550ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
 }

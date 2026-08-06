@@ -1,4 +1,4 @@
-export type ThemeType = 'newspaper' | 'typewriter' | 'creative';
+export type ThemeType = 'newspaper' | 'typewriter' | 'creative' | 'editorial';
 
 export const THEME_COOKIE_NAME = 'portfolio-theme';
 export const THEME_STORAGE_KEY = 'portfolio-theme';
@@ -53,13 +53,25 @@ export const THEMES: ThemeConfig[] = [
       accent: '#d35400',
     },
   },
+  {
+    id: 'editorial',
+    name: 'Editorial',
+    description: 'Bold agency-style layout with scroll motion',
+    longDescription: 'A confident, studio-agency inspired design. Sage backdrop, oversized cream display type, numbered index sections, and subtle scroll-driven motion.',
+    icon: '◆',
+    previewImage: '/images/themes/editorial-preview.png',
+    colors: {
+      bg: '#6b7a74',
+      accent: '#f2ede1',
+    },
+  },
 ];
 
-export const DEFAULT_THEME: ThemeType = 
-  (process.env.NEXT_PUBLIC_THEME as ThemeType) || 'newspaper';
+export const DEFAULT_THEME: ThemeType =
+  (process.env.NEXT_PUBLIC_THEME as ThemeType) || 'editorial';
 
 export function getThemeById(id: string): ThemeType {
-  const validThemes: ThemeType[] = ['newspaper', 'typewriter', 'creative'];
+  const validThemes: ThemeType[] = ['newspaper', 'typewriter', 'creative', 'editorial'];
   return validThemes.includes(id as ThemeType) ? (id as ThemeType) : DEFAULT_THEME;
 }
 

@@ -1,4 +1,4 @@
-import { Playfair_Display, Source_Serif_4, Courier_Prime } from 'next/font/google';
+import { Playfair_Display, Source_Serif_4, Courier_Prime, Archivo } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/react";
 import { cookies } from 'next/headers';
 import { ThemeProvider } from '@/app/providers/theme-provider';
@@ -26,6 +26,13 @@ const courierPrime = Courier_Prime({
   display: 'swap',
   variable: '--font-courier',
   weight: ['400', '700'],
+});
+
+const archivo = Archivo({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-archivo',
+  weight: ['400', '500', '600', '700', '800', '900'],
 });
 
 export const metadata = {
@@ -123,7 +130,7 @@ export default async function RootLayout({
     <html 
       lang="en" 
       data-theme={theme}
-      className={`${playfairDisplay.variable} ${sourceSerif.variable} ${courierPrime.variable}`}
+      className={`${playfairDisplay.variable} ${sourceSerif.variable} ${courierPrime.variable} ${archivo.variable}`}
     >
       <head>
         <JsonLd />

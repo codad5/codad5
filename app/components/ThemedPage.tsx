@@ -4,6 +4,7 @@ import { useTheme } from '@/app/providers/theme-provider';
 import { Hero as NewspaperHero, About as NewspaperAbout, Experience as NewspaperExperience, Projects as NewspaperProjects, Blog as NewspaperBlog, Contact as NewspaperContact } from '@/app/components/themes/newspaper';
 import { Hero as TypewriterHero, About as TypewriterAbout, Experience as TypewriterExperience, Projects as TypewriterProjects, Blog as TypewriterBlog, Contact as TypewriterContact } from '@/app/components/themes/typewriter';
 import { Hero as CreativeHero, About as CreativeAbout, Experience as CreativeExperience, Projects as CreativeProjects, Blog as CreativeBlog, Contact as CreativeContact } from '@/app/components/themes/creative';
+import { Hero as EditorialHero, About as EditorialAbout, Experience as EditorialExperience, Projects as EditorialProjects, Blog as EditorialBlog, Contact as EditorialContact } from '@/app/components/themes/editorial';
 import { postsType } from '@/app/components/types';
 import Footer from '@/app/components/shared/Footer';
 
@@ -23,6 +24,20 @@ export default function ThemedPage({ posts }: ThemedPageProps) {
         <CreativeProjects />
         <CreativeBlog posts={posts} />
         <CreativeContact />
+        <Footer />
+      </>
+    );
+  }
+
+  if (theme === 'editorial') {
+    return (
+      <>
+        <EditorialHero />
+        <EditorialAbout />
+        <EditorialExperience />
+        <EditorialProjects />
+        <EditorialBlog posts={posts} />
+        <EditorialContact />
         <Footer />
       </>
     );

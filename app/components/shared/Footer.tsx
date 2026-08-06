@@ -194,6 +194,56 @@ export default function Footer() {
     );
   }
 
+  // Editorial theme style
+  if (theme === 'editorial') {
+    return (
+      <footer
+        className="w-full px-6 lg:px-12 py-6"
+        style={{ backgroundColor: 'var(--color-bg-secondary)', borderTop: '1px solid var(--color-border)' }}
+      >
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+          <span
+            className="text-xs uppercase tracking-wide"
+            style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)' }}
+          >
+            © {currentYear} Chibueze Aniezeofor
+          </span>
+
+          <div className="flex items-center gap-3">
+            <span
+              className="text-xs uppercase tracking-wide"
+              style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)' }}
+            >
+              Theme:
+            </span>
+            <ThemeSwitcher />
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-5">
+            <Link href="/" className="text-xs uppercase tracking-wide no-underline" style={{ color: 'var(--color-text-secondary)' }}>
+              Home
+            </Link>
+            <Link href="/posts" className="text-xs uppercase tracking-wide no-underline" style={{ color: 'var(--color-text-secondary)' }}>
+              Blog
+            </Link>
+            <Link href="/resume" className="text-xs uppercase tracking-wide no-underline" style={{ color: 'var(--color-text-secondary)' }}>
+              Resume
+            </Link>
+            <a
+              href="https://github.com/codad5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs uppercase tracking-wide no-underline"
+              style={{ color: 'var(--color-text-secondary)' }}
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </footer>
+    );
+  }
+
   // Default: Newspaper theme style
   return (
     <footer 
