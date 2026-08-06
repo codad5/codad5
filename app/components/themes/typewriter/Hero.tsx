@@ -8,8 +8,15 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const fullText = 'CHIBUEZE ANIEZEOFOR';
   
-  const navItems = ['ABOUT', 'EXPERIENCE', 'PROJECTS', 'BLOG', 'CONTACT'];
-  
+  const navLinks = [
+    { label: 'ABOUT', href: '#about' },
+    { label: 'EXPERIENCE', href: '#experience' },
+    { label: 'PROJECTS', href: '#projects' },
+    { label: 'RESUME', href: '/resume' },
+    { label: 'BLOG', href: '/posts' },
+    { label: 'CONTACT', href: '#contact' },
+  ];
+
   // Typewriter effect
   useEffect(() => {
     let index = 0;
@@ -70,13 +77,13 @@ export default function Hero() {
 
         {/* Tagline */}
         <p 
-          className="text-sm sm:text-lg md:text-xl text-center max-w-2xl font-body uppercase tracking-wider"
+          className="text-sm sm:text-lg md:text-xl text-center max-w-2xl font-body uppercase tracking-wider font-bold"
           style={{ 
             fontFamily: 'var(--font-body)',
             color: 'var(--color-text-secondary)'
           }}
         >
-          Software Engineer // 6+ Years Experience
+          Top Software Engineer // PHP, Node.js, TypeScript, Python & Rust
         </p>
 
         {/* Skills as typed list */}
@@ -103,10 +110,10 @@ export default function Hero() {
           backgroundColor: 'var(--color-bg-secondary)'
         }}
       >
-        {navItems.map((item, index) => (
+        {navLinks.map((item, index) => (
           <a
-            key={item}
-            href={`#${item.toLowerCase()}`}
+            key={item.label}
+            href={item.href}
             className="font-mono text-sm tracking-widest no-underline hover:underline"
             style={{ 
               fontFamily: 'var(--font-mono)',
@@ -114,7 +121,7 @@ export default function Hero() {
               textDecorationStyle: 'dashed'
             }}
           >
-            {index + 1}. {item}
+            {index + 1}. {item.label}
           </a>
         ))}
       </nav>
@@ -144,10 +151,10 @@ export default function Hero() {
             className="flex flex-col border-t-2"
             style={{ borderColor: 'var(--color-border)' }}
           >
-            {navItems.map((item, index) => (
+            {navLinks.map((item, index) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={item.label}
+                href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className="px-6 py-3 font-mono text-sm tracking-widest no-underline border-b"
                 style={{ 
@@ -156,7 +163,7 @@ export default function Hero() {
                   borderColor: 'var(--color-border-light)'
                 }}
               >
-                {index + 1}. {item}
+                {index + 1}. {item.label}
               </a>
             ))}
           </div>

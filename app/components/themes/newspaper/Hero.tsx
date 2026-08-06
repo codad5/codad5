@@ -13,7 +13,14 @@ export default function Hero() {
     day: 'numeric',
   });
 
-  const navItems = ['About', 'Experience', 'Projects', 'Blog', 'Contact'];
+  const navLinks = [
+    { label: 'About', href: '#about' },
+    { label: 'Experience', href: '#experience' },
+    { label: 'Projects', href: '#projects' },
+    { label: 'Resume', href: '/resume' },
+    { label: 'Blog', href: '/posts' },
+    { label: 'Contact', href: '#contact' },
+  ];
 
   return (
     <header 
@@ -57,10 +64,10 @@ export default function Hero() {
             style={{ backgroundColor: 'var(--color-border)' }}
           />
           <span 
-            className="text-xs sm:text-sm tracking-widest uppercase"
+            className="text-xs sm:text-sm tracking-widest uppercase font-bold"
             style={{ color: 'var(--color-text-muted)' }}
           >
-            Software Engineer
+            Top Software Engineer & Senior Backend Developer
           </span>
           <div 
             className="flex-1 h-px"
@@ -76,8 +83,7 @@ export default function Hero() {
             color: 'var(--color-text-secondary)'
           }}
         >
-          6+ years building scalable backend systems, developer tools, and AI-driven products.
-          Passionate about systems architecture and performance optimization.
+          6+ years building scalable backend systems, distributed architecture, and AI-driven products in <strong>PHP</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong>, <strong>Python</strong>, and <strong>Rust</strong>.
         </p>
 
         {/* Skills ticker */}
@@ -87,7 +93,7 @@ export default function Hero() {
           {featuredSkills.map((skill) => (
             <span
               key={skill}
-              className="px-2 sm:px-3 py-1 text-xs sm:text-sm border"
+              className="px-2 sm:px-3 py-1 text-xs sm:text-sm border font-medium"
               style={{ 
                 borderColor: 'var(--color-border)',
                 color: 'var(--color-text-primary)',
@@ -108,17 +114,17 @@ export default function Hero() {
           backgroundColor: 'var(--color-bg-secondary)'
         }}
       >
-        {navItems.map((item) => (
+        {navLinks.map((link) => (
           <a
-            key={item}
-            href={`#${item.toLowerCase()}`}
+            key={link.label}
+            href={link.href}
             className="text-sm uppercase tracking-wider font-medium no-underline hover:underline"
             style={{ 
               color: 'var(--color-text-primary)',
               textDecorationColor: 'var(--color-accent)'
             }}
           >
-            {item}
+            {link.label}
           </a>
         ))}
       </nav>
@@ -145,10 +151,10 @@ export default function Hero() {
             className="flex flex-col border-t"
             style={{ borderColor: 'var(--color-border-light)' }}
           >
-            {navItems.map((item) => (
+            {navLinks.map((link) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={link.label}
+                href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className="px-6 py-3 text-sm uppercase tracking-wider font-medium no-underline border-b"
                 style={{ 
@@ -156,7 +162,7 @@ export default function Hero() {
                   borderColor: 'var(--color-border-light)'
                 }}
               >
-                {item}
+                {link.label}
               </a>
             ))}
           </div>

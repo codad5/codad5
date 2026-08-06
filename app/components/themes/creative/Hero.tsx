@@ -28,7 +28,14 @@ const Star = ({ className = '' }: { className?: string }) => (
 export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
-  const navItems = ['About', 'Experience', 'Projects', 'Blog', 'Contact'];
+  const navLinks = [
+    { label: 'About', href: '#about' },
+    { label: 'Experience', href: '#experience' },
+    { label: 'Projects', href: '#projects' },
+    { label: 'Resume', href: '/resume' },
+    { label: 'Blog', href: '/posts' },
+    { label: 'Contact', href: '#contact' },
+  ];
 
   return (
     <header 
@@ -50,17 +57,17 @@ export default function Hero() {
         
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-2">
-          {navItems.map((item, i) => (
+          {navLinks.map((item, i) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
               className="px-5 py-2 rounded-full text-sm no-underline transition-all"
               style={{ 
                 backgroundColor: i === 0 ? 'var(--color-accent-blue)' : 'transparent',
                 color: i === 0 ? '#fff' : 'var(--color-text-primary)'
               }}
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>
@@ -93,10 +100,10 @@ export default function Hero() {
           className="md:hidden flex flex-col px-6 pb-6 gap-2"
           style={{ backgroundColor: 'var(--color-bg-primary)' }}
         >
-          {navItems.map((item) => (
+          {navLinks.map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
               onClick={() => setMobileMenuOpen(false)}
               className="px-4 py-3 rounded-xl text-sm no-underline"
               style={{ 
@@ -104,7 +111,7 @@ export default function Hero() {
                 color: 'var(--color-text-primary)'
               }}
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>

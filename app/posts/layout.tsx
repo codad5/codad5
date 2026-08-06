@@ -1,20 +1,23 @@
 import Footer from '../components/shared/Footer';
 
 export const metadata = {
-  title: 'Blog - Chibueze Aniezeofor',
-  description: 'Thoughts, tutorials, and insights on software development by Chibueze Aniezeofor.',
+  title: 'Blog & Software Engineering Articles | Chibueze Aniezeofor (codad5)',
+  description: 'Thoughts, tutorials, and deep technical insights on software engineering, PHP, Node.js, TypeScript, Python, and backend systems by Chibueze Aniezeofor (codad5).',
   generator: 'Next.js',
   applicationName: 'Codad5',
   referrer: 'origin-when-cross-origin',
-  keywords: ['codad5', 'blog', 'software development', 'tutorials', 'web development', 'CHIBUEZE MICHAEL ANIEZEOFOR'],
-  authors: [{ name: 'Chibueze Michael Aniezeofor', url: 'https://codad5.me' }],
-  creator: 'Chibueze Michael Aniezeofor',
-  publisher: 'Chibueze Michael Aniezeofor',
+  alternates: {
+    canonical: 'https://codad5.me/posts',
+  },
+  keywords: ['codad5', 'codad5_', 'blog', 'software engineering', 'PHP developer', 'nodejs developer', 'TypeScript developer', 'Python developer', 'tutorials', 'Chibueze Aniezeofor'],
+  authors: [{ name: 'Chibueze Aniezeofor', url: 'https://codad5.me' }],
+  creator: 'Chibueze Aniezeofor (codad5)',
+  publisher: 'Chibueze Aniezeofor',
   openGraph: {
-    title: 'Blog - Chibueze Aniezeofor',
-    description: 'Thoughts, tutorials, and insights on software development.',
+    title: 'Blog & Articles | Chibueze Aniezeofor (codad5) - Top Software Engineer',
+    description: 'Thoughts, tutorials, and insights on software engineering, PHP, Node.js, TypeScript, and Python by Chibueze Aniezeofor (codad5).',
     url: 'https://codad5.me/posts',
-    siteName: 'Codad5: A Software Engineer',
+    siteName: 'Chibueze Aniezeofor (codad5)',
     locale: 'en-US',
     type: 'website',
   },

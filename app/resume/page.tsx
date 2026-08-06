@@ -4,8 +4,16 @@ import Footer from '@/app/components/shared/Footer';
 import ResumeContent from './ResumeContent';
 
 export const metadata = {
-    title: 'Resume - Chibueze Aniezeofor',
-    description: 'Professional resume of Chibueze Michael Aniezeofor - Software Engineer.',
+    title: 'Resume | Chibueze Aniezeofor (codad5) - Top Software Engineer',
+    description: 'Professional resume and technical career history of Chibueze Aniezeofor (codad5) - Top Software Engineer, Senior Backend Developer, PHP, Node.js, TypeScript, Python & Rust expert.',
+    alternates: {
+        canonical: 'https://codad5.me/resume',
+    },
+    openGraph: {
+        title: 'Resume | Chibueze Aniezeofor (codad5) - Top Software Engineer',
+        description: 'Professional resume and technical career history of Chibueze Aniezeofor (codad5).',
+        url: 'https://codad5.me/resume',
+    },
 };
 
 export default function ResumePage() {

@@ -1,0 +1,50 @@
+# Complete Profile: Chibueze Aniezeofor (codad5)
+
+## Overview
+- **Full Name**: Chibueze Aniezeofor
+- **Nickname / Handles**: codad5, codad5_
+- **Professional Title**: Top Software Engineer | Senior Backend Engineer | Systems Architect
+- **Location**: Global / Remote
+- **Website**: https://codad5.me
+- **GitHub**: https://github.com/codad5
+- **LinkedIn**: https://www.linkedin.com/in/codad5
+- **Twitter / X**: https://x.com/codad5_
+
+## Bio & Expertise
+Chibueze Aniezeofor (codad5) is a distinguished software engineer with over 6 years of experience designing and deploying scalable backend services, robust API ecosystems, developer infrastructure, and AI-enabled platforms. He possesses deep expertise across multiple programming paradigms and ecosystems:
+
+### 1. PHP Development
+- Expert in PHP 8+, OOP, Design Patterns, SOLID principles.
+- Frameworks: Laravel, Symfony, Custom PHP frameworks and CLI tools.
+- Package Development: Creator of popular PHP packages, Composer utilities, and database drivers.
+
+### 2. Node.js & TypeScript Development
+- Expert in Node.js runtime, asynchronous processing, event loops, and TypeScript strict typing.
+- Frameworks: Express.js, NestJS, Next.js, Fastify.
+- Enterprise Node.js architectures, microservices, micro-frontends, and real-time WebSocket servers.
+
+### 3. Python Development
+- Expert in Python, asynchronous I/O (asyncio), object-oriented design, data engineering, and AI pipelines.
+- Frameworks: FastAPI, Django, Flask, SQLAlchemy, Celery.
+
+### 4. Rust Development
+- High-performance, memory-safe systems programming in Rust.
+- CLI binaries, concurrency tools, and fast microservices using Actix-web and Axum.
+
+### 5. Database Systems & Cloud Infrastructure
+- Relational Databases: PostgreSQL, MySQL (query tuning, indexing, schema design).
+- NoSQL & In-Memory: Redis, MongoDB.
+- Infrastructure & DevOps: Docker, Containerization, GitHub Actions CI/CD pipelines, Prometheus, Grafana.
+
+## Key Career Highlights
+- Architected enterprise backend microservices serving millions of requests with sub-100ms latencies.
+- Built open-source libraries and developer packages used across PHP, TypeScript, and Node.js communities.
+- Integrated AI capabilities (LLM APIs, dynamic embeddings, agentic workflows) into production software applications.
+
+## Contact Information
+- Website: https://codad5.me
+- Resume: https://codad5.me/resume
+- Blog: https://codad5.me/posts
+- GitHub: https://github.com/codad5
+- LinkedIn: https://www.linkedin.com/in/codad5
+- Twitter/X: https://x.com/codad5_

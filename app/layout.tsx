@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { cookies } from 'next/headers';
 import { ThemeProvider } from '@/app/providers/theme-provider';
 import { DEFAULT_THEME, ThemeType, THEME_COOKIE_NAME, getThemeById } from '@/app/lib/theme';
+import JsonLd from '@/app/components/shared/JsonLd';
 import '@/app/globals.css';
 
 // Font configurations
@@ -28,28 +29,44 @@ const courierPrime = Courier_Prime({
 });
 
 export const metadata = {
-  title: "Chibueze Aniezeofor | Software Engineer",
+  title: {
+    default: "Chibueze Aniezeofor (codad5) | Top Software Engineer & Backend Developer",
+    template: "%s | Chibueze Aniezeofor (codad5)"
+  },
   description:
-    "Software Engineer with 6+ years of experience building scalable backend systems, developer tools, and AI-driven products. Passionate about systems architecture and performance optimization.",
+    "Chibueze Aniezeofor (codad5) is a top software engineer and senior backend developer with 6+ years building scalable systems, APIs, and AI products in PHP, Node.js, TypeScript, Python, and Rust.",
   generator: "Next.js",
-  applicationName: "Codad5 Portfolio",
+  applicationName: "Chibueze Aniezeofor (codad5) Portfolio",
   metadataBase: new URL('https://codad5.me'),
+  alternates: {
+    canonical: 'https://codad5.me',
+  },
   keywords: [
     "Chibueze Aniezeofor",
     "codad5",
+    "codad5_",
+    "top software engineer",
+    "top backend engineer",
+    "PHP developer",
+    "PHP software engineer",
+    "nodejs developer",
+    "Node.js developer",
+    "TypeScript developer",
+    "TypeScript software engineer",
+    "Python developer",
+    "Python software engineer",
+    "Rust developer",
     "Software Engineer",
     "Backend Developer",
-    "TypeScript",
-    "PHP",
-    "Rust",
-    "Node.js",
-    "Laravel",
-    "Next.js",
+    "Systems Architect",
+    "Laravel developer",
+    "NestJS developer",
+    "Next.js developer",
     "AI Developer",
-    "Full Stack Developer",
+    "Full Stack Developer"
   ],
   authors: [{ name: "Chibueze Aniezeofor", url: "https://codad5.me" }],
-  creator: "Chibueze Aniezeofor",
+  creator: "Chibueze Aniezeofor (codad5)",
   publisher: "Chibueze Aniezeofor",
   formatDetection: {
     email: true,
@@ -57,17 +74,17 @@ export const metadata = {
     telephone: true,
   },
   openGraph: {
-    title: "Chibueze Aniezeofor | Software Engineer",
+    title: "Chibueze Aniezeofor (codad5) | Top Software Engineer & Backend Developer",
     description:
-      "Software Engineer with 6+ years of experience building scalable backend systems, developer tools, and AI-driven products.",
+      "Official portfolio of Chibueze Aniezeofor (codad5) — Top Software Engineer, PHP Developer, Node.js Developer, TypeScript Developer, Python Developer & Systems Architect.",
     url: "https://codad5.me",
-    siteName: "Codad5",
+    siteName: "Chibueze Aniezeofor (codad5)",
     images: [
       {
         url: "https://avatars.githubusercontent.com/u/66634814?v=4",
         width: 800,
         height: 800,
-        alt: "Chibueze Aniezeofor - Software Engineer",
+        alt: "Chibueze Aniezeofor (codad5) - Top Software Engineer",
       },
     ],
     locale: "en-US",
@@ -75,9 +92,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chibueze Aniezeofor | Software Engineer",
-    description: "Software Engineer with 6+ years of experience",
+    title: "Chibueze Aniezeofor (codad5) | Top Software Engineer",
+    description: "Top Software Engineer & Senior Backend Developer specializing in PHP, Node.js, TypeScript, Python & Rust.",
     creator: "@codad5_",
+    images: ["https://avatars.githubusercontent.com/u/66634814?v=4"],
   },
   robots: {
     index: true,
@@ -107,6 +125,9 @@ export default async function RootLayout({
       data-theme={theme}
       className={`${playfairDisplay.variable} ${sourceSerif.variable} ${courierPrime.variable}`}
     >
+      <head>
+        <JsonLd />
+      </head>
       <body className="max-w-[100vw] overflow-x-hidden">
         <ThemeProvider initialTheme={theme}>
           <div id="root">
@@ -118,3 +139,4 @@ export default async function RootLayout({
     </html>
   );
 }
+

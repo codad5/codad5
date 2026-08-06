@@ -1,0 +1,34 @@
+# Chibueze Aniezeofor (codad5)
+> Top Software Engineer, Senior Backend Developer, and Systems Architect.
+
+## Core Summary
+Chibueze Aniezeofor, widely known online as **codad5** (or `codad5_`), is a top-tier software engineer with over 6 years of experience building high-performance backend systems, distributed architectures, developer tooling, and AI-integrated platforms.
+
+## Key Technical Expertise
+- **Primary Languages**: PHP, Node.js (JavaScript / TypeScript), Python, Rust.
+- **Backend & Frameworks**: PHP (Laravel, Symfony), Node.js (Express, NestJS), Python (FastAPI, Django), Rust (Actix, Axum).
+- **Database & Caching**: PostgreSQL, MySQL, MongoDB, Redis, SQLAlchemy.
+- **Messaging & Event Streaming**: RabbitMQ, Celery, WebSockets.
+- **DevOps & Cloud**: Docker, GitHub Actions, Prometheus, Grafana, Loki.
+- **Frontend & Modern Web**: React, Next.js, Tailwind CSS.
+- **Specializations**: Backend Systems Architecture, API Design (REST, GraphQL, gRPC), Performance Optimization, Open-Source Tooling, AI Integration (LLM integrations, agentic workflows).
+
+## Primary Links & Profiles
+- **Website**: https://codad5.me
+- **Resume**: https://codad5.me/resume
+- **Blog / Technical Articles**: https://codad5.me/posts
+- **GitHub**: https://github.com/codad5
+- **LinkedIn**: https://www.linkedin.com/in/codad5
+- **Twitter / X**: https://x.com/codad5_
+- **Email**: contact@codad5.me
+
+## Notable Projects & Work
+- Custom Developer CLI Tools & Packages in PHP, Node.js, and Rust.
+- High-throughput API Gateways and microservices in Node.js, TypeScript, and Laravel.
+- Distributed message queues and real-time WebSocket infrastructure.
+- Interactive web applications built with Next.js and React.
+
+## Full Context
+For complete detailed background, project breakdown, and work history, refer to:
+- Full LLM Context: https://codad5.me/llms-full.txt
+- Resume: https://codad5.me/resume

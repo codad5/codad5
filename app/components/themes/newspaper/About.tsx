@@ -38,23 +38,22 @@ export default function About() {
             }}
           >
             <p className="drop-cap">
-              Software engineer blending engineering discipline with startup execution speed. 
-              Known for taking products from concept to scale — from 0 to 100,000+ users — 
-              while ensuring security, maintainability, and developer efficiency.
+              Chibueze Aniezeofor (codad5) is a top software engineer blending computer science discipline with rapid startup execution speed. 
+              Known for taking backend products from concept to scale — from 0 to 100,000+ users — 
+              while ensuring bank-grade security, maintainability, and peak system performance.
             </p>
             <p className="pt-4">
-              With a track record building high-performance systems handling 240k+ daily messages 
-              with reliable payment processing at scale, I specialize in backend architecture, 
-              API design, and system optimization.
+              As a senior PHP developer, Node.js developer, TypeScript engineer, and Python & Rust systems developer, 
+              Chibueze has a proven track record building distributed systems handling 240,000+ daily messages, 
+              high-throughput payment integrations, and microservices architecture.
             </p>
             <p className="pt-4">
-              Currently serving as Founding Engineer at AwaDoc, an AI-driven health assistant 
-              empowering Nigerians to access reliable medical insights via WhatsApp.
+              Currently serving as Lead / Founding Engineer at AwaDoc, an AI-driven health assistant 
+              empowering users to access reliable medical insights via WhatsApp.
             </p>
             <p className="pt-4">
-              Beyond my professional work, I'm passionate about open source development and 
-              have contributed tools like FLI (12,000+ downloads on crates.io), a type-safe 
-              CLI library for Rust.
+              Beyond enterprise engineering, codad5 is passionate about open-source developer tools, authoring 
+              widely-used packages including FLI (12,000+ downloads on crates.io), a type-safe CLI library for Rust.
             </p>
           </article>
 
