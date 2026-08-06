@@ -15,8 +15,8 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full px-6 lg:px-12 pt-20 lg:pt-28 pb-8"
-      style={{ backgroundColor: 'var(--color-bg-secondary)', borderTop: '1px solid var(--color-border)' }}
+      className="ed-stack relative w-full flex flex-col justify-center px-6 lg:px-12 pt-20 lg:pt-28 pb-8 lg:min-h-screen"
+      style={{ backgroundColor: 'var(--color-bg-secondary)', borderTop: '1px solid var(--color-border)', zIndex: 60 }}
     >
       <div className="max-w-6xl mx-auto flex flex-col gap-16">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10">

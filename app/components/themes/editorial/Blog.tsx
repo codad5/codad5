@@ -18,11 +18,14 @@ export default function Blog({ posts }: BlogProps) {
   return (
     <section
       id="blog"
-      className="w-full px-6 lg:px-12 py-20 lg:py-28"
-      style={{ backgroundColor: 'var(--color-bg-primary)', borderTop: '1px solid var(--color-border)' }}
+      className="ed-stack relative w-full flex flex-col justify-center px-6 lg:px-12 py-20 lg:py-28 lg:min-h-screen"
+      style={{ backgroundColor: 'var(--color-bg-primary)', borderTop: '1px solid var(--color-border)', zIndex: 50 }}
     >
-      <div className="max-w-6xl mx-auto flex flex-col gap-12">
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+      <div className="max-w-6xl mx-auto w-full flex flex-col gap-12">
+        <div
+          className="ed-section-header flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 -mx-6 px-6 lg:-mx-12 lg:px-12 py-4"
+          style={{ backgroundColor: 'var(--color-bg-primary)' }}
+        >
           <Reveal variant="line">
             <h2
               className="text-4xl sm:text-5xl lg:text-6xl"

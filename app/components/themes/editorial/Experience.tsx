@@ -7,11 +7,14 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="w-full px-6 lg:px-12 py-20 lg:py-28"
-      style={{ backgroundColor: 'var(--color-bg-primary)', borderTop: '1px solid var(--color-border)' }}
+      className="relative w-full px-6 lg:px-12 py-20 lg:py-28"
+      style={{ backgroundColor: 'var(--color-bg-primary)', borderTop: '1px solid var(--color-border)', zIndex: 30 }}
     >
       <div className="max-w-6xl mx-auto flex flex-col gap-16">
-        <div className="flex items-end justify-between gap-6">
+        <div
+          className="ed-section-header flex items-end justify-between gap-6 -mx-6 px-6 lg:-mx-12 lg:px-12 py-4"
+          style={{ backgroundColor: 'var(--color-bg-primary)' }}
+        >
           <Reveal variant="line">
             <h2
               className="text-4xl sm:text-5xl lg:text-6xl"

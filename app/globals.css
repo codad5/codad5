@@ -334,3 +334,40 @@ code {
     animation: ed-letter-pop 550ms cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 }
+
+/* ============================================
+   Editorial Theme - Persistent Bar + Section Stack
+   ============================================ */
+
+[data-theme="editorial"] {
+  --ed-topbar-h: 4.5rem;
+}
+
+.ed-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--ed-topbar-h, 4.5rem);
+}
+
+/* Full-section stacking/cover effect — desktop only, and only on
+   content-bounded sections, so long lists never get visually trapped
+   under a permanently-glued sticky ancestor. */
+@media (min-width: 1024px) {
+  .ed-stack {
+    position: sticky;
+    top: 0;
+  }
+}
+
+/* Section header stays pinned under the top bar while that section's
+   own body content scrolls beneath it. Safe at any content length
+   since only the (small) header is sticky, never the whole section. */
+.ed-section-header {
+  position: sticky;
+  top: var(--ed-topbar-h, 4.5rem);
+  z-index: 5;
+  backdrop-filter: blur(6px);
+}

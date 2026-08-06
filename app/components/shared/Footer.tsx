@@ -198,8 +198,8 @@ export default function Footer() {
   if (theme === 'editorial') {
     return (
       <footer
-        className="w-full px-6 lg:px-12 py-6"
-        style={{ backgroundColor: 'var(--color-bg-secondary)', borderTop: '1px solid var(--color-border)' }}
+        className="relative w-full px-6 lg:px-12 py-6"
+        style={{ backgroundColor: 'var(--color-bg-secondary)', borderTop: '1px solid var(--color-border)', zIndex: 70 }}
       >
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <span

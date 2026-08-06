@@ -1,22 +1,13 @@
 'use client';
 
-import { useState } from 'react';
 import { useParallax } from './useParallax';
 import Reveal from './Reveal';
 import AnimatedLetters from './AnimatedLetters';
+import { useNavMenu } from './NavMenuContext';
 
 const roles = [
   { index: '01', label: 'Backend', sub: 'Engineer' },
   { index: '02', label: 'Systems', sub: 'Programmer' },
-];
-
-const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Blog', href: '/posts' },
-  { label: 'Resume', href: '/resume' },
-  { label: 'Contact', href: '#contact' },
 ];
 
 const links = [
@@ -27,17 +18,17 @@ const links = [
 ];
 
 export default function Hero() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const nameRef = useParallax<HTMLHeadingElement>(0.08);
+  const { open, toggle } = useNavMenu();
 
   return (
     <header
-      className="w-full flex flex-col relative overflow-hidden"
-      style={{ backgroundColor: 'var(--color-bg-primary)' }}
+      className="ed-stack w-full flex flex-col relative overflow-hidden"
+      style={{ backgroundColor: 'var(--color-bg-primary)', zIndex: 10 }}
     >
-      {/* Top bar: logo + roles */}
+      {/* Header: full name + roles + menu trigger — this IS the page header while on Hero */}
       <div
-        className="flex items-start justify-between px-6 lg:px-12 pt-8 pb-6 gap-6"
+        className="flex items-start justify-between px-6 lg:px-12 pt-6 pb-6 gap-6"
         style={{ borderBottom: '1px solid var(--color-border)' }}
       >
         <div className="flex flex-col leading-[0.95]">
@@ -77,51 +68,18 @@ export default function Hero() {
         </div>
 
         <button
-          onClick={() => setMenuOpen((v) => !v)}
+          onClick={toggle}
           className="text-sm transition-opacity duration-300 hover:opacity-50"
           style={{ color: 'var(--color-text-primary)', fontFamily: 'var(--font-body)', fontWeight: 700 }}
           aria-label="Toggle menu"
         >
-          {menuOpen ? 'Close ✕' : 'Menu ☰'}
+          {open ? 'Close ✕' : 'Menu ☰'}
         </button>
       </div>
 
-      {/* Full-screen nav overlay */}
-      <div
-        className={`fixed inset-0 z-40 flex flex-col justify-center px-6 lg:px-12 transition-all duration-500 ${
-          menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
-        style={{ backgroundColor: 'var(--color-bg-inverse)' }}
-      >
-        <nav className="flex flex-col gap-2">
-          {navLinks.map((item, i) => (
-            <a
-              key={item.label}
-              href={item.href}
-              onClick={() => setMenuOpen(false)}
-              className="group no-underline flex items-baseline gap-4 py-2 transition-transform duration-500"
-              style={{
-                transitionDelay: menuOpen ? `${i * 60}ms` : '0ms',
-                transform: menuOpen ? 'translateX(0)' : 'translateX(24px)',
-                opacity: menuOpen ? 1 : 0,
-              }}
-            >
-              <span
-                className="text-sm transition-colors duration-300 group-hover:text-[#e8734a]"
-                style={{ color: '#8a8f8a', fontFamily: 'var(--font-body)' }}
-              >
-                0{i + 1}
-              </span>
-              <span
-                className="text-4xl sm:text-5xl lg:text-6xl transition-all duration-300 group-hover:translate-x-3 group-hover:text-[#e8734a]"
-                style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, color: '#171a18' }}
-              >
-                {item.label}
-              </span>
-            </a>
-          ))}
-        </nav>
-      </div>
+      {/* Sentinel: once this scrolls above the viewport, the compact fixed
+          top bar takes over so the header is never shown twice at once. */}
+      <div id="ed-hero-header-end" />
 
       {/* Tagline + links panel */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-10 px-6 lg:px-12 pt-16 lg:pt-24 pb-10">
