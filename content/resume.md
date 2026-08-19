@@ -1,5 +1,4 @@
 # Chibueze Aniezeofor
-
 **Backend Engineer** · Node.js · TypeScript · AI Systems
 
 📍 Nigeria (Remote) &nbsp;|&nbsp; 🌐 [codad5.me](https://codad5.me) &nbsp;|&nbsp; ✉️ [aniezeoformic@gmail.com](mailto:aniezeoformic@gmail.com)
@@ -9,29 +8,28 @@
 
 ## Summary
 
-Backend engineer with 5+ years building scalable APIs, AI-powered platforms, and production infrastructure. Known for taking products from zero to scale — architected the backend for AwaDoc from the ground up to 100,000+ users, processing 240k+ daily messages with live payment flows. Also builds systems-level projects from scratch, including a custom binary tunneling protocol and multi-tenant TLS/ACME infrastructure (raba). Comfortable owning complex backend systems end-to-end, from system design to production deployment. Background in Mechanical Engineering sharpens how I approach systems thinking and performance under constraints.
+Backend engineer with 5+ years building scalable APIs, AI-powered platforms, and production infrastructure. Known for taking products from zero to scale — architected the backend for AwaDoc from the ground up to 100,000+ users, processing 240k+ daily messages with live payment flows. Also builds deep systems-level projects from scratch: designed a custom binary tunneling protocol over TLS, multi-tenant RBAC architecture, and automated ACME certificate infrastructure for raba, an open-source ngrok alternative in Rust. Comfortable owning complex backend systems end-to-end, from system design to production deployment. Background in Mechanical Engineering sharpens how I approach systems thinking and performance under constraints.
 
 ---
 
 ## Technical Skills
 
-|                        |                                                                       |
-| ---------------------- | --------------------------------------------------------------------- |
-| **Languages**          | TypeScript, JavaScript, PHP, Rust, Python                             |
-| **Backend & APIs**     | Node.js, NestJS, Express.js, Laravel, FastAPI                         |
-| **Databases**          | PostgreSQL, MySQL, MongoDB, Redis                                     |
-| **AI & LLMs**          | OpenAI API, DeepSeek, Qdrant (vector search), prompt engineering      |
-| **Infrastructure**     | Docker, GitHub Actions, Prometheus, Grafana, Loki, Linux server admin |
-| **Queues & Messaging** | BullMQ, RabbitMQ, Celery, WhatsApp Business API                       |
-| **Frontend**           | React, Next.js, Tailwind CSS                                          |
-| **Other**              | WebSockets, REST APIs, OAuth 2.0, CLI development, SQLAlchemy         |
+| | |
+|---|---|
+| **Languages** | TypeScript, JavaScript, PHP, Rust, Python |
+| **Backend & APIs** | Node.js, NestJS, Express.js, Laravel, FastAPI |
+| **Databases** | PostgreSQL, MySQL, MongoDB, Redis |
+| **AI & LLMs** | OpenAI API, DeepSeek, Qdrant (vector search), prompt engineering |
+| **Infrastructure** | Docker, GitHub Actions, Prometheus, Grafana, Loki, Linux server admin |
+| **Queues & Messaging** | BullMQ, RabbitMQ, Celery, WhatsApp Business API |
+| **Frontend** | React, Next.js, Vue 3, Inertia.js, Tailwind CSS |
+| **Other** | WebSockets, REST APIs, OAuth 2.0, CLI development, SQLAlchemy |
 
 ---
 
 ## Experience
 
-### Founding Engineer — AwaDoc _(AI Health Startup, Nigeria)_
-
+### Founding Engineer — AwaDoc *(AI Health Startup, Nigeria)*
 `January 2024 – Present`
 
 AwaDoc is an AI-driven health assistant that gives Nigerians access to reliable medical guidance via WhatsApp.
@@ -45,8 +43,7 @@ AwaDoc is an AI-driven health assistant that gives Nigerians access to reliable 
 
 ---
 
-### Contract WordPress Plugin Developer — Fusion Intelligence _(Nigeria)_
-
+### Contract WordPress Plugin Developer — Fusion Intelligence *(Nigeria)*
 `December 2024 – Present`
 
 - Developed custom WordPress themes and plugins that improved product delivery speed and reliability for the company's client base.
@@ -54,8 +51,7 @@ AwaDoc is an AI-driven health assistant that gives Nigerians access to reliable 
 
 ---
 
-### PHP Developer — Cyberinfomatic _(Nigeria)_
-
+### PHP Developer — Cyberinfomatic *(Nigeria)*
 `March 2024 – December 2024`
 
 - Shipped a real-time crypto price tracking plugin for WordPress using PHP.
@@ -64,8 +60,7 @@ AwaDoc is an AI-driven health assistant that gives Nigerians access to reliable 
 
 ---
 
-### Backend Developer — Appsthathelps _(Mobile App Agency)_
-
+### Backend Developer — Appsthathelps *(Mobile App Agency)*
 `July 2023 – August 2024`
 
 - Designed and maintained Laravel APIs powering a mobile app with **5,000+ downloads**.
@@ -74,8 +69,7 @@ AwaDoc is an AI-driven health assistant that gives Nigerians access to reliable 
 
 ---
 
-### Backend Developer — Clusterlearn _(Learning Platform)_
-
+### Backend Developer — Clusterlearn *(Learning Platform)*
 `January 2023 – June 2023`
 
 - Implemented a Node.js learner-matching system that improved platform retention by 40%.
@@ -84,8 +78,7 @@ AwaDoc is an AI-driven health assistant that gives Nigerians access to reliable 
 
 ---
 
-### Freelance PHP & Web Developer _(Upwork)_
-
+### Freelance PHP & Web Developer *(Upwork)*
 `2020 – Present`
 
 - Delivered 10+ production websites and 5+ open-source contributions across industries; 90% client satisfaction rating.
@@ -95,19 +88,30 @@ AwaDoc is an AI-driven health assistant that gives Nigerians access to reliable 
 
 ## Projects
 
-### raba — Self-Hosted Tunneling Platform _(ngrok/Cloudflare Tunnel Alternative, Open Source)_
+### raba — Self-Hosted Tunneling Platform *(Open Source, ngrok alternative)*
 
-`Rust · TypeScript/React · Docker · GitHub Actions` · [codad5.github.io/raba](https://codad5.github.io/raba) · [github.com/codad5/raba](https://github.com/codad5/raba)
+`Rust · TypeScript/React · Docker · GitHub Actions` · [github.com/codad5/raba](https://github.com/codad5/raba)
 
-- Designed and implemented a custom multiplexed binary protocol over TLS from scratch — no WebSocket, no HTTP-over-HTTP — tunneling HTTP, TCP, and UDP traffic over a single persistent connection per client.
-- Architected a multi-tenant RBAC system with three isolated credential types (JWT sessions, PATs, tunnel secrets); found and fixed a domain-hijack security gap via transactional project revocation.
-- Automated Let's Encrypt certificate issuance/renewal via delegated DNS-01, enabling per-tenant custom domains without the platform ever holding third-party DNS credentials.
-- Shipped a full CI/CD pipeline (GitHub Actions) publishing Docker images to GHCR and cross-platform CLI binaries (Linux/macOS/Windows) on tagged releases; 176 tests passing, clippy-clean across the workspace.
+- Designed and implemented a custom multiplexed binary protocol over TLS from scratch — tunneling HTTP, TCP, and UDP traffic over a single persistent connection per client with no WebSocket or HTTP-over-HTTP dependency.
+- Architected a multi-tenant RBAC system with three isolated credential types (JWT sessions, PATs, tunnel secrets); identified and closed a domain-hijack security gap via transactional project revocation.
+- Automated Let's Encrypt certificate issuance and renewal via delegated DNS-01, enabling per-tenant custom domains without the platform ever storing third-party DNS credentials.
+- Shipped a full CI/CD pipeline (GitHub Actions) publishing Docker images to GHCR and cross-platform CLI binaries for Linux, macOS, and Windows on tagged releases; 176 tests passing, clippy-clean across the workspace.
 
 ---
 
-### FLI — Rust CLI Framework _(Open Source)_
+### RISMS — Multi-Tenant School Management SaaS
 
+`PHP 8.3 · Laravel · PostgreSQL · Vue 3 · Inertia.js · Docker · Traefik · Cloudflare` · [staging.risms.xyz](https://staging.risms.xyz)
+
+- Architected and built a multi-tenant SaaS platform from scratch supporting three tenant-resolution strategies (path prefix, wildcard subdomain, customer-owned custom domain) behind a single shared route and controller layer — no route duplication across access methods.
+- Designed a ledger-first financial subsystem: wallet balances computed from an append-only transaction log (never a mutable column), money as a first-class value object in minor units, and a pluggable per-institution payment provider architecture (encrypted per-tenant credentials, per-tenant webhook signature verification) supporting Paystack and cash without touching call-site code.
+- Built a memory-bounded three-pass streaming CSV/XLSX bulk import pipeline — distinct-values pass, user mapping pass, validated import pass — keeping memory flat regardless of file size with per-row transactional isolation so one bad row never aborts the batch.
+- Identified and fixed 6+ unbounded-query bugs across production pages (attendance, payment history, wallet ledger, admin dashboard) converting each to properly paginated, indexed queries with deterministic sort keys.
+- Enforced strict static analysis (PHPStan/Larastan) and a 780+ automated test suite as real merge gates, catching cross-tenant boundary leaks, nullable-type mismatches, and forged webhook signatures before deployment.
+
+---
+
+### FLI — Rust CLI Framework *(Open Source)*
 `Rust` · [crates.io/crates/fli](https://crates.io/crates/fli) · [github.com/codad5/fli](https://github.com/codad5/fli)
 
 - Type-safe CLI library for Rust inspired by commander.js — **12,000+ downloads** on crates.io.
@@ -117,7 +121,6 @@ AwaDoc is an AI-driven health assistant that gives Nigerians access to reliable 
 ---
 
 ### PDFz — High-Performance PDF Extraction Service
-
 `Rust · Node.js · Docker · RabbitMQ · Redis`
 
 - Distributed PDF extraction service with support for both Tesseract and Ollama OCR engines.
@@ -126,19 +129,10 @@ AwaDoc is an AI-driven health assistant that gives Nigerians access to reliable 
 ---
 
 ### Resurgee — AI Task Orchestration Platform
-
 `Python · FastAPI · PostgreSQL · Redis · Celery · OpenAI GPT-4 · Docker`
 
 - AI layer on top of Google Tasks and Calendar: natural language task creation, smart rescheduling based on productivity patterns, bidirectional sync across multiple accounts.
 - Unified OAuth flow handling user auth and multi-calendar linking in a single callback.
-
----
-
-### Google Task Client — Desktop App
-
-`Tauri (Rust) · React · TypeScript · Google Tasks API`
-
-- Cross-platform desktop app built with Tauri for native performance. Launched to **1,000+ users**.
 
 ---
 
