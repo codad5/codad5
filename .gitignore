@@ -37,3 +37,10 @@ next-env.d.ts
 
 # test.js
 test.js
+
+# scratch/working notes (not part of the project)
+/.tmp/
+/.playwright-mcp/
+
+# private working skill (personal process notes, not for public repo)
+/.claude/skills/social-optimization/

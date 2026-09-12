@@ -15,12 +15,24 @@ export const experiences: Experience[] = [
     timeline: 'January 2024 – Present',
     url: 'https://awadoc.com',
     highlights: [
-      'Scaled platform to 100,000+ users in 6 months',
-      'Architected messaging infrastructure handling 240k+ daily messages',
-      'Built high-performance message processing system (10,000+ messages/hour)',
-      'Engineered API and backend architecture for WhatsApp bot and Admin Web App',
-      'Led system hardening efforts enhancing infrastructure security',
-      'Contributed to AI prompt optimization reducing hallucinations by 40%',
+      'Built out the backend and guided much of the engineering as the platform grew to 200,000+ users',
+      'Engineered a message-processing pipeline and queue system sustaining ~240,000 daily messages and ~10,000 messages/hour',
+      'Established the engineering quality bar: 2,000+ automated tests and a factory-pattern architecture',
+      'Built AwaDoc\'s multi-tenant partner integration platform (2-engineer team), handling 10,000+ events/day',
+      'Integrated OpenAI and DeepSeek for medical guidance; led prompt engineering and evaluation',
+    ],
+  },
+  {
+    id: 'ridox-studio',
+    company: 'Ridox Studio',
+    position: 'Founder & Lead Engineer',
+    timeline: '2022 – Present',
+    url: 'https://ridoxstudio.com',
+    highlights: [
+      'Founded an independent studio building web, mobile, cloud, and AI products; own architecture and delivery end-to-end',
+      'Develop and operate in-house products including RISMS (multi-tenant school-management SaaS), Cilbup (anonymous creator messaging/tipping), and Resurgee (AI task orchestration)',
+      'Building Netcart, a multi-audience marketplace, end-to-end — mobile app, backend, and admin portal',
+      'Deliver client engagements from discovery and architecture through to deployment and handover',
     ],
   },
   {
@@ -59,17 +71,6 @@ export const experiences: Experience[] = [
       'Automated recurring updates reducing manual work by 90%',
       'Integrated OneSignal for push notifications',
       'Achieved 99.9% API uptime',
-    ],
-  },
-  {
-    id: 'clusterlearn',
-    company: 'Clusterlearn',
-    position: 'Backend Developer',
-    timeline: 'January 2023 – June 2023',
-    highlights: [
-      'Built Node.js-based learner connection system (40% retention improvement)',
-      'Integrated Google Calendar API (50% scheduling efficiency)',
-      'Strengthened security with Redis-based email validation',
     ],
   },
   {

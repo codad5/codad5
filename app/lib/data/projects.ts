@@ -50,7 +50,26 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  // === TIER 0: Flagship Systems Project ===
+  // === TIER 0: Flagship Projects ===
+  {
+    id: 'risms',
+    name: 'RISMS — Multi-Tenant School Management SaaS',
+    type: 'fullstack',
+    mainLang: 'PHP (Laravel)',
+    tags: ['php', 'laravel', 'vue', 'multi-tenant', 'fintech'],
+    links: {
+      website: 'https://risms.school',
+    },
+    description: 'Multi-tenant school management platform for Ridox Studio — event-sourced financial subsystem (wallet balances as a fold over an append-only ledger, never a mutable column), three tenant-resolution strategies behind one shared route layer, per-institution payment providers with encrypted credentials (Paystack + cash). Built from first commit to production in about a month. Digitizing school finance and admin today, building toward a new way for African students to learn in the AI era, tomorrow.',
+    featured: true,
+    relevance: {
+      php: 10,
+      backend: 10,
+      systems: 6,
+      devops: 5,
+      opensource: 2,
+    },
+  },
   {
     id: 'raba',
     name: 'raba — Self-Hosted Tunneling Platform',
