@@ -1,10 +1,10 @@
 import Footer from '../components/shared/Footer';
 
 export const metadata = {
-  title: 'Blog & Software Engineering Articles | Chibueze Aniezeofor (codad5)',
+  title: 'Blog & Software Engineering Articles',
   description: 'Thoughts, tutorials, and deep technical insights on software engineering, PHP, Node.js, TypeScript, Python, and backend systems by Chibueze Aniezeofor (codad5).',
   generator: 'Next.js',
-  applicationName: 'Codad5',
+  applicationName: 'Chibueze Aniezeofor',
   referrer: 'origin-when-cross-origin',
   alternates: {
     canonical: 'https://codad5.me/posts',
@@ -14,10 +14,10 @@ export const metadata = {
   creator: 'Chibueze Aniezeofor (codad5)',
   publisher: 'Chibueze Aniezeofor',
   openGraph: {
-    title: 'Blog & Articles | Chibueze Aniezeofor (codad5) - Top Software Engineer',
+    title: 'Blog & Articles | Chibueze Aniezeofor (codad5)',
     description: 'Thoughts, tutorials, and insights on software engineering, PHP, Node.js, TypeScript, and Python by Chibueze Aniezeofor (codad5).',
     url: 'https://codad5.me/posts',
-    siteName: 'Chibueze Aniezeofor (codad5)',
+    siteName: 'Chibueze Aniezeofor',
     locale: 'en-US',
     type: 'website',
   },

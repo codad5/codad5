@@ -37,13 +37,13 @@ const archivo = Archivo({
 
 export const metadata = {
   title: {
-    default: "Chibueze Aniezeofor (codad5) | Top Software Engineer & Backend Developer",
+    default: "Chibueze Aniezeofor (codad5) | Senior Backend Engineer",
     template: "%s | Chibueze Aniezeofor (codad5)"
   },
   description:
-    "Chibueze Aniezeofor (codad5) is a top software engineer and senior backend developer with 6+ years building scalable systems, APIs, and AI products in PHP, Node.js, TypeScript, Python, and Rust.",
+    "Chibueze Aniezeofor (codad5) is a senior backend engineer with 6+ years building scalable systems, APIs, and AI products in PHP, Node.js, TypeScript, Python, and Rust.",
   generator: "Next.js",
-  applicationName: "Chibueze Aniezeofor (codad5) Portfolio",
+  applicationName: "Chibueze Aniezeofor",
   metadataBase: new URL('https://codad5.me'),
   alternates: {
     canonical: 'https://codad5.me',
@@ -81,17 +81,17 @@ export const metadata = {
     telephone: true,
   },
   openGraph: {
-    title: "Chibueze Aniezeofor (codad5) | Top Software Engineer & Backend Developer",
+    title: "Chibueze Aniezeofor (codad5) | Senior Backend Engineer",
     description:
-      "Official portfolio of Chibueze Aniezeofor (codad5) — Top Software Engineer, PHP Developer, Node.js Developer, TypeScript Developer, Python Developer & Systems Architect.",
+      "Official portfolio of Chibueze Aniezeofor (codad5), senior backend engineer building APIs, distributed systems and AI products with Node.js, TypeScript, PHP, Python and Rust.",
     url: "https://codad5.me",
-    siteName: "Chibueze Aniezeofor (codad5)",
+    siteName: "Chibueze Aniezeofor",
     images: [
       {
         url: "https://avatars.githubusercontent.com/u/66634814?v=4",
         width: 800,
         height: 800,
-        alt: "Chibueze Aniezeofor (codad5) - Top Software Engineer",
+        alt: "Chibueze Aniezeofor (codad5)",
       },
     ],
     locale: "en-US",
@@ -99,8 +99,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chibueze Aniezeofor (codad5) | Top Software Engineer",
-    description: "Top Software Engineer & Senior Backend Developer specializing in PHP, Node.js, TypeScript, Python & Rust.",
+    title: "Chibueze Aniezeofor (codad5) | Senior Backend Engineer",
+    description: "Senior Backend Engineer specializing in PHP, Node.js, TypeScript, Python & Rust.",
     creator: "@codad5_",
     images: ["https://avatars.githubusercontent.com/u/66634814?v=4"],
   },

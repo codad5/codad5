@@ -48,7 +48,7 @@ export async function generateMetadata({ params, searchParams } : { params: Prom
             title: formattedTitle,
             description: description ?? 'Technical article by Chibueze Aniezeofor (codad5).',
             url: pageUrl,
-            siteName: 'Chibueze Aniezeofor (codad5)',
+            siteName: 'Chibueze Aniezeofor',
             publishedTime: date,
             authors: ['Chibueze Aniezeofor', 'codad5'],
             images: [

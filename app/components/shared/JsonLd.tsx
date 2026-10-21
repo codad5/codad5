@@ -5,63 +5,55 @@ export default function JsonLd() {
 
   const personSchema = {
     '@context': 'https://schema.org',
-    '@type': ['Person', 'ProfilePage'],
+    '@type': 'Person',
     '@id': `${baseUrl}/#person`,
     name: 'Chibueze Aniezeofor',
-    alternateName: ['codad5', 'codad5_', 'Chibueze Aniezeofor (codad5)'],
+    alternateName: ['codad5', 'codad5_', 'Chibueze Michael Aniezeofor'],
     url: baseUrl,
     image: 'https://avatars.githubusercontent.com/u/66634814?v=4',
-    jobTitle: [
-      'Top Software Engineer',
-      'Senior Backend Engineer',
-      'PHP Developer',
-      'Node.js Developer',
-      'TypeScript Developer',
-      'Python Developer',
-      'Rust Developer',
-      'Full Stack Developer',
-      'Systems Architect'
-    ],
+    jobTitle: 'Senior Backend Engineer',
     worksFor: {
       '@type': 'Organization',
       name: 'Independent / Consulting'
     },
     description:
-      'Chibueze Aniezeofor (codad5) is a top software engineer and senior backend systems developer with 6+ years of experience building scalable backend APIs, developer tools, high-performance distributed systems, and AI-driven products using PHP, Node.js, TypeScript, Python, and Rust.',
+      'Chibueze Aniezeofor (codad5) is a senior backend engineer with 6+ years of experience building scalable backend APIs, developer tools, distributed systems, and AI-driven products using Node.js, TypeScript, PHP, Python, and Rust.',
     knowsAbout: [
-      'Software Engineering',
       'Backend Development',
+      'Node.js',
+      'TypeScript',
       'PHP',
       'Laravel',
-      'Node.js',
-      'Express.js',
       'NestJS',
-      'TypeScript',
-      'JavaScript',
       'Python',
-      'FastAPI',
       'Rust',
       'PostgreSQL',
-      'MySQL',
       'MongoDB',
       'Redis',
-      'RabbitMQ',
       'Docker',
-      'Systems Architecture',
-      'Performance Optimization',
-      'AI Integration',
-      'REST APIs',
-      'WebSockets'
+      'Distributed Systems',
+      'AI Integration'
     ],
     sameAs: [
       'https://github.com/codad5',
       'https://www.linkedin.com/in/codad5',
       'https://x.com/codad5_',
-      'https://twitter.com/codad5_'
-    ],
-    mainEntityOfPage: {
-      '@type': 'ProfilePage',
-      '@id': baseUrl
+      'https://www.instagram.com/codad5_',
+      'https://www.npmjs.com/~codad5',
+      'https://crates.io/users/codad5'
+    ]
+  };
+
+  const profilePageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    '@id': `${baseUrl}/#profilepage`,
+    url: baseUrl,
+    mainEntity: {
+      '@id': `${baseUrl}/#person`
+    },
+    isPartOf: {
+      '@id': `${baseUrl}/#website`
     }
   };
 
@@ -69,10 +61,11 @@ export default function JsonLd() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     '@id': `${baseUrl}/#website`,
-    url: baseUrl,
-    name: 'Chibueze Aniezeofor (codad5) | Top Software Engineer',
+    url: `${baseUrl}/`,
+    name: 'Chibueze Aniezeofor',
+    alternateName: ['codad5', 'codad5.me'],
     description:
-      'Official portfolio of Chibueze Aniezeofor (codad5) — Top Software Engineer, PHP Developer, Node.js Developer, TypeScript Developer, Python Developer & Systems Architect.',
+      'Portfolio, projects, and writing of Chibueze Aniezeofor (codad5), senior backend engineer.',
     publisher: {
       '@id': `${baseUrl}/#person`
     },
@@ -87,7 +80,7 @@ export default function JsonLd() {
         '@type': 'SiteNavigationElement',
         position: 1,
         name: 'About Me',
-        description: 'Learn about Chibueze Aniezeofor (codad5), top software engineer background, and experience.',
+        description: 'Learn about Chibueze Aniezeofor (codad5), software engineering background, and experience.',
         url: `${baseUrl}/#about`
       },
       {
@@ -133,6 +126,10 @@ export default function JsonLd() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageSchema) }}
       />
       <script
         type="application/ld+json"
