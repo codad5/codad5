@@ -7,7 +7,7 @@ const contactDetails = [
 
 const socialLinks = [
   { name: 'GITHUB', url: 'https://github.com/codad5', handle: '@codad5' },
-  { name: 'LINKEDIN', url: 'https://www.linkedin.com/in/chibueze-michael', handle: '/chibueze-michael' },
+  { name: 'LINKEDIN', url: 'https://www.linkedin.com/in/chibueze-aniezeofor', handle: '/chibueze-aniezeofor' },
   { name: 'TWITTER', url: 'https://twitter.com/codad5_', handle: '@codad5_' },
 ];
 

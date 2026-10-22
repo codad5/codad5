@@ -239,7 +239,7 @@ export default function Hero() {
             <div className="flex gap-3">
               {[
                 { abbr: 'Gh', url: 'https://github.com/codad5' },
-                { abbr: 'Li', url: 'https://www.linkedin.com/in/chibueze-michael' },
+                { abbr: 'Li', url: 'https://www.linkedin.com/in/chibueze-aniezeofor' },
                 { abbr: 'Tw', url: 'https://twitter.com/codad5_' },
               ].map((social) => (
                 <a

@@ -12,7 +12,7 @@ const roles = [
 
 const links = [
   { label: 'GitHub', url: 'https://github.com/codad5' },
-  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/chibueze-michael' },
+  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/chibueze-aniezeofor' },
   { label: 'Twitter', url: 'https://twitter.com/codad5_' },
   { label: 'Resume', url: '/resume' },
 ];
@@ -59,7 +59,7 @@ export default function Hero() {
               </span>
               <span
                 className="text-sm leading-tight"
-                style={{ color: 'var(--color-text-primary)', fontFamily: 'var(--font-body)', fontWeight: 700 }}
+                style={{ color: 'var(--color-text-secondary)', fontFamily: 'var(--font-body)', fontWeight: 700 }}
               >
                 {role.label}
                 <br />
@@ -72,7 +72,7 @@ export default function Hero() {
         <button
           onClick={toggle}
           className="text-sm transition-opacity duration-300 hover:opacity-50"
-          style={{ color: 'var(--color-text-primary)', fontFamily: 'var(--font-body)', fontWeight: 700 }}
+          style={{ color: 'var(--color-text-secondary)', fontFamily: 'var(--font-body)', fontWeight: 700 }}
           aria-label="Toggle menu"
         >
           {open ? 'Close ✕' : 'Menu ☰'}
@@ -99,7 +99,7 @@ export default function Hero() {
         <Reveal delay={220} className="flex flex-col justify-end w-full lg:w-72">
           <span
             className="text-xs uppercase tracking-widest mb-3"
-            style={{ color: 'var(--color-text-primary)', fontFamily: 'var(--font-body)', fontWeight: 700 }}
+            style={{ color: 'var(--color-text-secondary)', fontFamily: 'var(--font-body)', fontWeight: 700 }}
           >
             Links
           </span>
@@ -122,7 +122,7 @@ export default function Hero() {
                   </span>
                   <span
                     className="text-sm transition-transform duration-300 group-hover:translate-x-1"
-                    style={{ color: 'var(--color-text-primary)', fontFamily: 'var(--font-body)', fontWeight: 700 }}
+                    style={{ color: 'var(--color-text-secondary)', fontFamily: 'var(--font-body)', fontWeight: 700 }}
                   >
                     {link.label}
                   </span>

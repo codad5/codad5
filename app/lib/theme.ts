@@ -61,7 +61,7 @@ export const THEMES: ThemeConfig[] = [
     icon: '◆',
     previewImage: '/images/themes/editorial-preview.png',
     colors: {
-      bg: '#6b7a74',
+      bg: '#5b6863',
       accent: '#f2ede1',
     },
   },

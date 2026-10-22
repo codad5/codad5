@@ -87,14 +87,14 @@
 /* Editorial Theme (Agency/Studio style) */
 [data-theme="editorial"] {
   /* Sage backdrop, cream ink */
-  --color-bg-primary: #6b7a74;
-  --color-bg-secondary: #5f6e68;
-  --color-bg-tertiary: #56655f;
+  --color-bg-primary: #5b6863;
+  --color-bg-secondary: #515e58;
+  --color-bg-tertiary: #49554f;
   --color-bg-inverse: #f2ede1;
 
   --color-text-primary: #171a18;
-  --color-text-secondary: #e9e4d8;
-  --color-text-muted: #c7cec9;
+  --color-text-secondary: #f2ede1;
+  --color-text-muted: #e9e4d8;
 
   --color-accent: #f2ede1;
   --color-accent-hover: #ffffff;

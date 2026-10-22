@@ -5,7 +5,7 @@ import { useParallax } from './useParallax';
 
 const socialLinks = [
   { name: 'GitHub', url: 'https://github.com/codad5' },
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/chibueze-michael' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/chibueze-aniezeofor' },
   { name: 'Twitter', url: 'https://twitter.com/codad5_' },
 ];
 

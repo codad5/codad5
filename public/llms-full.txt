@@ -7,7 +7,7 @@
 - **Location**: Global / Remote
 - **Website**: https://codad5.me
 - **GitHub**: https://github.com/codad5
-- **LinkedIn**: https://www.linkedin.com/in/codad5
+- **LinkedIn**: https://www.linkedin.com/in/chibueze-aniezeofor
 - **Twitter / X**: https://x.com/codad5_
 
 ## Bio & Expertise
@@ -46,5 +46,5 @@ Chibueze Aniezeofor (codad5) is a distinguished software engineer with over 6 ye
 - Resume: https://codad5.me/resume
 - Blog: https://codad5.me/posts
 - GitHub: https://github.com/codad5
-- LinkedIn: https://www.linkedin.com/in/codad5
+- LinkedIn: https://www.linkedin.com/in/chibueze-aniezeofor
 - Twitter/X: https://x.com/codad5_

@@ -36,7 +36,7 @@ export default function JsonLd() {
     ],
     sameAs: [
       'https://github.com/codad5',
-      'https://www.linkedin.com/in/codad5',
+      'https://www.linkedin.com/in/chibueze-aniezeofor',
       'https://x.com/codad5_',
       'https://www.instagram.com/codad5_',
       'https://www.npmjs.com/~codad5',

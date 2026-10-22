@@ -21,7 +21,7 @@ const contactDetails: ContactInfo[] = [
 
 const socialLinks = [
   { name: 'GitHub', abbr: 'Gh', url: 'https://github.com/codad5' },
-  { name: 'LinkedIn', abbr: 'Li', url: 'https://www.linkedin.com/in/chibueze-michael' },
+  { name: 'LinkedIn', abbr: 'Li', url: 'https://www.linkedin.com/in/chibueze-aniezeofor' },
   { name: 'Twitter', abbr: 'Tw', url: 'https://twitter.com/codad5_' },
 ];
 

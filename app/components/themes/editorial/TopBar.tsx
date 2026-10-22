@@ -32,7 +32,7 @@ export default function TopBar() {
         <a
           href="#"
           className="no-underline transition-opacity duration-300 hover:opacity-60"
-          style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--color-text-primary)', fontSize: '1.1rem' }}
+          style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--color-text-secondary)', fontSize: '1.1rem' }}
         >
           Chibueze A.
         </a>
@@ -40,7 +40,7 @@ export default function TopBar() {
         <button
           onClick={toggle}
           className="text-sm transition-opacity duration-300 hover:opacity-50"
-          style={{ color: 'var(--color-text-primary)', fontFamily: 'var(--font-body)', fontWeight: 700 }}
+          style={{ color: 'var(--color-text-secondary)', fontFamily: 'var(--font-body)', fontWeight: 700 }}
           aria-label="Toggle menu"
         >
           {open ? 'Close ✕' : 'Menu ☰'}
@@ -78,7 +78,7 @@ export default function TopBar() {
             >
               <span
                 className="text-sm transition-colors duration-300 group-hover:text-[#e8734a]"
-                style={{ color: '#8a8f8a', fontFamily: 'var(--font-body)' }}
+                style={{ color: '#646964', fontFamily: 'var(--font-body)' }}
               >
                 0{i + 1}
               </span>
